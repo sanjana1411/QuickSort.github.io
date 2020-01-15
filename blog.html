@@ -1,0 +1,967 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="ostacor">
+    <meta name="keywords" content="HTML,CSS,JavaScript,jquery">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+         
+          <title>QuickSort</title>
+          <!-- bootstrap -->
+          <link href="css/bootstrap.min.css" rel="stylesheet">
+          <!-- Custom CSS: custom Styles -->
+          <link href="css/animate.css" rel="stylesheet">
+          <link href="css/viewbox.css" rel="stylesheet">
+          <link href="css/main.css" rel="stylesheet">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
+<style>
+.banner {
+    display: flex;
+    align-items: center;
+    height: 65vh;
+    color: #fff;
+    position: relative;
+    text-transform: uppercase;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('images/specialities.jpg');
+}
+.banner  h1 {
+    text-align: left;
+}
+footer {background-image: url("images/banner-customers.jpg");background-repeat: no-repeat;background-size: cover;background-position: top;}
+</style>
+          
+          <!-- Google Font and font-awesome -->
+          <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,300,400,400i,500,500i,600,700,900" rel="stylesheet">
+          
+                
+          <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+          <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+          <!--[if lt IE 9]>
+           
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <![endif]-->
+  </head>
+  
+<!-- Navbar Start-->
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <!-- Brand -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <!-- Nav links -->
+                <ul class="nav navbar-nav navbar-right">
+                   <li ><a href="index.html">Home</a></li>
+                   <li class="hidden-xs">|</li>
+                   <li><a href="about.html">About</a></li>
+                   <li class="hidden-xs">|</li>
+                   <li><a href="services.html">Mock Interviews</a></li>
+                   <li class="hidden-xs">|</li>
+                   <li><a href="portfolio.html">Mock Tests</a></li>
+                   <li class="hidden-xs">|</li>
+                   <li><a href="blog.html">Interview Experiences</a></li>
+                   <li class="hidden-xs">|</li>
+                   <li><a href="team.html">Our Team</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-- Navbar Ended-->
+
+<!-- Jumbotron Start-->
+<div class="text-center banner">
+   <div class="gradient"></div>
+    <div class="container">
+       <div class="row">
+           <div class="col-md-12">
+                <h1 data-aos="fade-left" data-aos-easing="linear" data-aos-duration="800">Interview Experiences</h1>
+           </div>
+       </div>
+    </div>
+</div>
+<!-- Jumbotron Ended-->
+
+<!-- support section Start -->
+<section id="blog">
+  <div class="container-fluid">
+    <div class="row">
+        <h4>Read from our curated on-campus archives</h4>
+        <h6 style="font-family: Monotype Corosiva">"Always walk through life as if you have something new to learn, and you will"</h6>
+          <div class="row">
+               <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500" data-aos-delay="500">
+                  <img src="images/Isha.jpeg" class="img-responsive">
+                <div class="inner-contant">
+                <h style="font-size: 30px;"><center><b>Isha Gautam</b></center></h>
+                  <p style="font-size: 20px;"><center>Google SDE Intern</center></p> 
+                  <center>
+                  <button data-toggle="modal" data-target="#myModal1" style="background-color: black; font-size: 15px; color: white; border-radius: 30px">+ read more</button>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500" data-aos-delay="500">
+                  <img src="images/Uber.png" class="img-responsive">
+                <div class="inner-contant">
+                  <h style="font-size: 30px;"><center><b>Avani Arora</b></center></h>
+                  <p style="font-size: 20px;"><center>Uber SDE FTE</center></p> 
+                  <center>
+                  <button data-toggle="modal" data-target="#myModal2" style="background-color: black; font-size: 15px; color: white; border-radius: 30px">+ read more</button>
+                </center>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500" data-aos-delay="1000">
+                  <img src="images/kriti.jpg" class="img-responsive">
+                <div class="inner-contant">
+                <h style="font-size: 30px;"><center><b>Kriti Bindra</b></center></h>
+                  <p style="font-size: 20px;"><center>Microsoft SDE Intern</center></p> 
+                  <center>
+                  <button data-toggle="modal" data-target="#myModal3" style="background-color: black; font-size: 15px; color: white; border-radius: 30px">+ read more</button>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500" data-aos-delay="1500">
+                  <img src="images/mahima.jpg" class="img-responsive"></a>
+                <div class="inner-contant">
+                <h style="font-size: 30px;"><center><b>Mahima Kataria</b></center></h>
+                  <p style="font-size: 20px;"><center>SAP Labs SDE Intern </center></p> 
+                  <center>
+                  <button data-toggle="modal" data-target="#myModal4" style="background-color: black; font-size: 15px; color: white; border-radius: 30px">+ read more</button>
+                </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
+                   <img src="images/google.jpg" class="img-responsive">
+                 <div class="inner-contant">
+                  <h style="font-size: 30px;"><center><b>Priya Gupta</b></center></h>
+                  <p style="font-size: 20px;"><center>Google SDE FTE</center></p> 
+                  <center>
+                  <button data-toggle="modal" data-target="#myModal5" style="background-color: black; font-size: 15px; color: white; border-radius: 30px">+ read more</button>
+                 </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500" data-aos-delay="500">
+                  <img src="images/Divya.jpg" class="img-responsive">
+                <div class="inner-contant">
+                 <h style="font-size: 30px;"><center><b>Divya</b></center></h>
+                  <p style="font-size: 20px;"><center>Goldman Sachs SDE Intern</center></p> 
+                  <center>
+                  <button data-toggle="modal" data-target="#myModal6" style="background-color: black; font-size: 15px; color: white; border-radius: 30px">+ read more</button>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500" data-aos-delay="1000">
+                  <img src="images/shalini.jpg" class="img-responsive">
+                <div class="inner-contant">
+                <h style="font-size: 30px;"><center><b>Shalini Jaiswal</b></center></h>
+                  <p style="font-size: 20px;"><center>LinkedIn SDE Intern </center></p> 
+                  <center>
+                  <button data-toggle="modal" data-target="#myModal7" style="background-color: black; font-size: 15px; color: white; border-radius: 30px">+ read more</button>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500" data-aos-delay="1500">
+                  <img src="images/goibibo.png" class="img-responsive">
+                <div class="inner-contant">
+                <h style="font-size: 30px;"><center><b>Anjali Kumar</b></center></h>
+                  <p style="font-size: 20px;"><center>GoIBIBO SDE FTE</center></p> 
+                  <center>
+                  <button data-toggle="modal" data-target="#myModal8" style="background-color: black; font-size: 15px; color: white; border-radius: 30px">+ read more</button>
+                </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
+                   <img src="images/dhriti.png" class="img-responsive">
+                 <div class="inner-contant">
+                  <h style="font-size: 30px;"><center><b>Dhriti Saini</b></center></h>
+                  <p style="font-size: 20px;"><center>American Express Intern</center></p> 
+                  <center>
+                  <button data-toggle="modal" data-target="#myModal9" style="background-color: black; font-size: 15px; color: white; border-radius: 30px">+ read more</button>
+                 </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500" data-aos-delay="500">
+                  <img src="images/Uber.png" class="img-responsive">
+                <div class="inner-contant">
+                  <h style="font-size: 30px;"><center><b>Priya Gupta</b></center></h>
+                  <p style="font-size: 20px;"><center>Uber SDE FTE</center></p> 
+                  <center>
+                  <button data-toggle="modal" data-target="#myModal10" style="background-color: black; font-size: 15px; color: white; border-radius: 30px">+ read more</button>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500" data-aos-delay="1000">
+                  <img src="images/priyanka.jpg" class="img-responsive">
+                <div class="inner-contant">
+               <h style="font-size: 30px;"><center><b>Priyanka Daryani</b></center></h>
+                  <p style="font-size: 20px;"><center>Codess & Microsoft Step-Intern</center></p> 
+                  <center>
+                  <button data-toggle="modal" data-target="#myModal11" style="background-color: black; font-size: 15px; color: white; border-radius: 30px">+ read more</button>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500" data-aos-delay="1500">
+                  <img src="images/morgan.jpg" class="img-responsive">
+                <div class="inner-contant">
+                <h style="font-size: 30px;"><center><b>Anonymous</b></center></h>
+                  <p style="font-size: 20px;"><center>Morgan Stanley SDE Intern</center></p> 
+                  <center>
+                  <button data-toggle="modal" data-target="#myModal12" style="background-color: black; font-size: 15px; color: white; border-radius: 30px">+ read more</button>
+                </div>
+              </div>
+          </div>
+
+          <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
+                   <img src="images/walmart.jpg" class="img-responsive">
+                 <div class="inner-contant">
+                  <h style="font-size: 30px;"><center><b>Jigyasa Khaneja</b></center></h>
+                  <p style="font-size: 20px;"><center>Walmart SDE Intern</center></p> 
+                  <center>
+                  <button data-toggle="modal" data-target="#myModal13" style="background-color: black; font-size: 15px; color: white; border-radius: 30px">+ read more</button>
+                 </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500" data-aos-delay="500">
+                  <img src="images/Microsoft.png" class="img-responsive">
+                <div class="inner-contant">
+                 <h style="font-size: 30px;"><center><b>Anonymous</b></center></h>
+                  <p style="font-size: 20px;"><center>Microsoft SDE Intern </center></p> 
+                  <center>
+                  <button data-toggle="modal" data-target="#myModal14" style="background-color: black; font-size: 15px; color: white; border-radius: 30px">+ read more</button>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500" data-aos-delay="1000">
+                  <img src="images/mansi.jpg" class="img-responsive">
+                <div class="inner-contant">
+                <h style="font-size: 30px;"><center><b>Mansi Kathuria</b></center></h>
+                  <p style="font-size: 20px;"><center>Intuit SDE Intern</center></p> 
+                  <center>
+                  <button data-toggle="modal" data-target="#myModal15" style="background-color: black; font-size: 15px; color: white; border-radius: 30px">+ read more</button>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500" data-aos-delay="1500">
+                  <img src="images/goldman.jpg" class="img-responsive">
+                <div class="inner-contant">
+              <h style="font-size: 30px;"><center><b>Mansi Goel</b></center></h>
+                  <p style="font-size: 20px;"><center>Goldman Sachs SDE Intern</center></p> 
+                  <center>
+                  <button data-toggle="modal" data-target="#myModal16" style="background-color: black; font-size: 15px; color: white; border-radius: 30px">+ read more</button>
+                </div>
+              </div>
+          </div>
+          <div class="row bt">
+              <div class="col-sm-12">
+              </br>
+                  <h style="font-size: 30px;"><center><b>We thank you for sharing your experiences with us!</b></center></h>
+              
+              </div>
+          </div>
+        </div>
+    </div>
+
+<!-- Modal -->
+  <div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Interview Experience</h4>
+        </div>
+        <div class="modal-body">
+    <h3><center>Round 1</center></h3>
+    <p>Resume Based Selection<br>No clarification was given for the basis of the selection.</p>
+
+    <h3><center>Round 2</center></h3>
+    <p>1 hour virtual interview: The atmosphere wasn't tensed so I was able to speak confidently. It was pretty chill. Coding was done on Google Docs.<br>Question: You are given array of 'n' numbers. You can remove elements from the array either from the front or from the rear. You need to make 'k' removals, such that the sum of the elements remaining must be minimised.<br><br>Answer: I first cleared all doubts, and confirmed the constraints, for example data type of the array, and whether invalid input like k>n was allowed or not, etc. I gave my answer in steps so that I gradually reached the most optimal answer.<br>First: I gave the greedy approach, wherein in each iteration I removed max(first element, last element). However I knew the approach was wrong, I told him the same, and made a test case to prove my point.<br>Second: I gave a recursive approach, wherein I made two calls: one by removing the first element, then by removing the last element. My answer would be the one which gives me the maximum sum. I was asked to code the function for the same. I was asked the complexity (exponential).<br>Third: I then had to optimise this. To do so, I applied memoisation, and made the changes to my code. He asked me the complexity of this code, but I got stuck here, so he quickly explained me the right way to calculate the complexity (k*n or k*n*n [I don't remember :p]) in such case.<br>Fourth: I was asked to optimise further. I was trying to create a 2-d or 3-d space like we do in DP, but I didn't get anywhere. So the interviewer gave me a hint: Is there any property of the remaining elements? Are they continuous or have gaps? So I realised the problem is basically smallest window in array of size (n-k).<br>I quickly gave the sliding window solution to this, and coded it. I was asked to code the complexity (linear) of this solution as well.<br>Throughout the interview I kept talking, sharing what I was thinking, and in cases where I thought my code won't work, I gave the interviewer a test case for the same which I made right then.</p>
+
+    <h3><center>Round 3</center></h3>
+    <p>1 hour virtual interview: Coding was done on Google Docs.<br>Question: There's a salesman and he has to travel two cities: say Hyderabad and Bangalore. At any given day, in any given city, he has some earning. The salesman can travel between the two cities to maximise his earnings. Our task is: 
+<br>1. to find out the maximum earnings possible.
+<br>2. to find the schedule through which maximum earnings can be made.<br>In this too, I started from the least efficient solution and moved to the most optimal. In the beginning I also cleared any doubts, like the data types (integers), as well as if there were any earnings made on the day of travel (no).<br>First: Greedy solution. Compare the earnings that can be made on the current day in current city, or the next day in next city. We choose the greater one. This would not work in each case. I told him so and made a test case for the same.<br>Second: Recursive approach. Two calls are made, one if we stay in the city, or if we leave this day and go to other city. I coded this and told him the complexity (exponential).<br>Third: I was told to optimise above approach, and so I created a storage space and coded the same. I was asked the complexity of this as well, and due to last interview I was able to use the same logical to correctly tell the answer (linear).<br>To do the next part (schedule), there was not much time left to code, so I just explained that in the recursive solution I can create the return type of the function as a class Pair which can contain both the answer string as well as integer, and based on the integer, we can change the answer string.</p>
+</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+<!-- Modal -->
+  <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Interview Experience</h4>
+        </div>
+        <div class="modal-body">
+    <h3><center>Round 1</center></h3>
+    <p>The first round was an online based round, on Hackerrank with a time limit of 3 hours. There were 3 coding questions , no Objective ones. Out of the 3 questions, 2 were based on graphs and 1 was a combination of Dynamic and Greedy. I was able to solve 2 questions and some test cases of the DP problem.<br>One of the graph question was based on DFS. Moreover no stubs were written by the problem setter, thus I had to spare time to write the code from scratch.</p>
+
+    <h3><center>Round 2</center></h3>
+    <p>Shortlists from the online round were called for interviews which were held the next day. Round 1 was more of a resume based round. The interviewer tested my knowledge on skills and projects mentioned in my resume. Other than that it also consisted of questions on networking, OOPS, JAVA(since i mentioned it as my preference) and in depth questions on Hashing. This round lasted for 45-50 mins and ended with a few managerial questions.</p>
+
+    <h3><center>Round 3</center></h3>
+    <p>Round 3 was a problem solving round and was again F2F . The interviewer asked me 2 questions.<br>1. Classical DP problem "Optimal Structure problem". After solving it via dp, and giving an O(N²) solution, i was asked another slight variation of the same problem, which with some help , was done in O(N).<br>2. The next question was a graph based question . There was a layout drawn by the interviewer and i was supposed to give the number of squares present in it. And i was given a start point.<br>The round lasted for 1hour and with some help i was able to solve both questions. One important thing is to ask for hints whenever you are stuck. </p>
+
+    <h3><center>Round 4</center></h3>
+    <p>This was the last round and was also lasted for an hour. The interviewer aaked me to code the solution, unlike rest of the rounds where only pen paper coding was involved. The problem was a data structure design problem. It was based on a customer service centre where incoming customers are attended by customer centres (N). And they were to be processed. I solved it using queues and hashmaps. After a basic design, more analytical queries were made and the system was made more complex.<br>The discussion ended with some basic conversation about Uber and the kind of teams and projects for freshers. Overall it was the most thorough round and the interviewer was very helpful and insightful.</p>
+</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+
+<!-- Modal -->
+  <div class="modal fade" id="myModal3" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Interview Experience</h4>
+        </div>
+        <div class="modal-body">
+    <h3><center>Round 1</center></h3>
+    <p>Round 1 was an Online test of 1 hr 30 minutes which we had to take in College.Three Questions were asked with difficulty ranging from Easy to Medium. Each student got different set of questions so luck can also play an important role as to what set of questions you get on that day but if anyone is thorough with their practice then all questions were doable.<br>First question: Easy dp question<br>Second question: It was the modification of finding the maximum length of a palindromic substring.<br>Third Question: Modification of connected components in a graph.
+<br>Passing criteria was maybe submitting 2 questions out 3 correctly or it could have been based on relative performance, nevertheless try answering atleast 2 questions correctly. A total of 75 students moved further to Round 2.</p>
+
+    <h3><center>Round 2</center></h3>
+    <p>Round 2 was the group fly round where 2 questions were given and we had to solve them in 45 minutes. It was a pen and paper round and the questions were of Easy-medium level.
+<br>First question: Given a column name, find the corresponding column number.
+<br>Second Question: Next Greater element in an array.
+Selection criteria was I think solving both the questions correctly and writing comprehensive code with neatness on paper.
+A total of 20-25 students moved to Round 3.</p>
+
+    <h3><center>Round 3</center></h3>
+    <p>Round 3 was the personal interview round. The interviewers were very warm and welcoming. As soon as I got to know the results of Round 2 I had to sit in front of the interviewer for the interview so I was very nervous but he was really sweet and made me very comfortable before asking anything.Then he first introduced himself to break the ice and then asked me to introduce myself. A suggestion would be to answer the questions as if you have already been hired and you've been asked to share your views on the question and how would you approach it so try to have a good discussion with the interviewers to know every aspect of the question and they are very patient so it would not be too difficult to get around once you start. First he asked me about the next greater element question and how did I solve it in the group fly round. Then he asked me about the opposite of the column number question that given column number,find corresponding column name. It was an easy question but I was very nervous so I was struggling initially but was constantly sharing what was going on in my mind. I asked him few hints and then was able to solve it after all. Third question was a Dp question: Count all possible paths from top left to bottom right of a mxn matrix. Since I had done this question before so I was pretty confident in my head that I could solve it easily and explained him my approach. He seemed pretty happy with my answers. We had some more discussions about how companies work and I asked him some questions about the work culture in the company. All in all this interview went well. </p>
+
+    <h3><center>Round 4</center></h3>
+    <p>Personal interview: Interviewer was a senior employee so at first I was a bit intimidated but I asked him about his day and some other things so that the environment doesn't become tense. He asked me to write code for counting the number of BST's in a binary tree. I was a bit scared because I had not solved this question before but I was still confident that a bit of effort was all that was needed at that time. I was constantly having discussions with him to know all the aspects and assumptions of the question. He was very particular about all the edge cases being taken care of so I was careful about that. The interview went on for over an hour and I was still struggling at this question but didn't lose hope. I knew this wasn't going the way I had expected and at last the interviewer said that he had given me enough hints and I had to solve it on my own now. After much of struggling and itching my head I was able to write the code with a few mistakes.Then he asked me some Operating system questions which were simple but still a little brush up of concepts was needed.Then a few questions were asked from Resume and what all I had done at that time. I knew overall it didn't go well but I didn't lose the spirit.</p>
+
+    <h3><center>Round 5</center></h3>
+    <p>This was the last face to face interview. The interviewer was again really warm and welcoming and I wasn't feeling nervous this time.He wanted to have discussions on the questions and know my approach and he would help me if I get stuck at something. He asked me the famous spiral matrix question but with a twist that given a function and a token saying clock-wise and anti-clockwise my function should print the matrix according to that token but function should have as less if else statements as possible.After some discussion he was happy with my approach. Then he asked the question to be solved recursively if possible and I was able to answer it. After that some questions on operating systems and some general discussions about Microsoft company and I was done with my last interview and had to wait for the results then.<br>I was constantly talking to them as if I was working at their company and this was my project and it gave me a different motivation to solve and come up with answer ,so that can be suggestion also on how to be comfortable and confident while talking to any expert or an interviewer. Also interviewers are always ready to help but you need to ask for it only then you can get benefited.</p>
+</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+
+<!-- Modal -->
+  <div class="modal fade" id="myModal4" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Interview Experience</h4>
+        </div>
+        <div class="modal-body">
+    <h3><center>Round 1</center></h3>
+    <p>It was an online coding test which consisted of 2 coding questions, 1 SQL based query problem and some aptitude mcq questions.
+<br>The SQL query was of medium tough level and the coding questions were based on basic data structures.
+<br>Aptitude mcq questions were easy but time consuming.</p>
+
+    <h3><center>Round 2</center></h3>
+    <p>The second round  was actually the first round of the interview, in which basic aptitude skills as well as the knowledge  of any one programming language  was extensively  tested.
+<br>Being a java programmer, I was asked various java basics including compiling techniques and software  details.
+Along with this, code for a programming pattern based question was asked.</p>
+
+    <h3><center>Round 3</center></h3>
+    <p>The third round, was the second round of the interview in which I was asked to explain logic and write codes of data structure based questions including  graphs and heaps.
+<br>The interviewer was observing the way you put forward your approach and the confidence with which you do so along with the correctness of logic and code.</p>
+
+    <h3><center>Round 4</center></h3>
+    <p>The last round was the HR round in which basic questions about my personality and view point were asked . The key point was that the interviewer was asking the questions very rapidly and was not giving much time to think, so one has to be very responsive and quick in giving well put answers.</p>
+</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal5" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Interview Experience</h4>
+        </div>
+        <div class="modal-body">
+    <h3><center>Round 1</center></h3>
+    <p>Resume based shortlisting. There was no telephonic interview.</p>
+
+    <h3><center>Round 2</center></h3>
+    <p>Interview 1: A string manipulation question and then a question on its extension. I first gave a brute force approach. I was asked to code the same and then I worked on the optimized solution and coded that.</p>
+
+    <h3><center>Round 3</center></h3>
+    <p>Interview 2: A tree based question which required bottom up traversal and DP. Then an extended version that required reverse engineering on the DP solution obtained.</p>
+
+    <h3><center>Round 4</center></h3>
+    <p>Interview 3: A linked list based question (similar to k reverse). Was directly asked to code it without discussing. After that, a word problem was given and a recursive function f(n,k) had to be derived mathematically on paper. Then was asked to code the DP solution for the same. Then asked for optimization by reducing the size of DP table.</p>
+
+    <h3><center>Round 5</center></h3>
+    <p>Interview 4: Two questions were asked. One was based on string and the other one was a combination of stack and heaps application question.</p>
+
+    <h3><center>Round 6</center></h3>
+    <p>Interview 5: This was the googlyeness round. This round is conducted to see how fit a candidate is for Google's culture. It is basically a discussion on various general topics like morals and skills etc. Questions like describe an ideal work environment were asked. Various situational examples are asked too.</p>
+</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal6" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Interview Experience</h4>
+        </div>
+        <div class="modal-body">
+    <h3><center>Round 1</center></h3>
+    <p>Online Coding Round: It was a 2 hours coding round on Hackerrank. No IDE was allowed. It consists of 2 coding ques, 15 MCQs and 2 extended questions.
+<br>1st coding ques was about basic math and implementation. Care was taken to enter data in long. I got 4 out of 6 TC correct.
+<br>2nd question was on Dynamic Programming on matrices. It was a bit tricky and took the maximum of my time. I got 3 out of 7 TC correct. 
+<br>The MCQs were based on Probability, Statistics, Calculus, and Algebra from class 11th and 12th syllabus. One could find questions based on Differential equations (substitution and formula-based), integration, etc.
+<br>Apart from that, there were coding ques including recursion, function calls manipulation, pointers, and references. One can refer to GFG for practice.
+<br>The extended ques were about the experience in Technology and to mention one failure and how you overcome it. It was of 120 words each. 
+
+<br>I found a bit of time constraint. The result of the online round came the same day at night. I was selected for further rounds scheduled for the next day.
+ </p>
+
+    <h3><center>Round 2</center></h3>
+    <p>Interview Round 1: The interview was held in the college auditorium. The interviewer was very pleasant and composed. He already had my resume which I submitted before hand. He begins with a standard ques of ""Tell me about yourself"". He noted few of points which I mentioned. He asked me 2 physics questions (I mentioned I was subject topper in Physics in Class 12th). One was a bit tricky and other was about Force Body Diagram. I said I didn't remember much of the concepts and he gave me hints to solve. He seems satisfying in the end. 
+
+<br>He then asked me about my research internship at IIT Delhi. I explained to him the project for about 5-10 minutes. He listened carefully. He seems satisfied. No cross questioning was done.
+
+<br>He then saw my resume and asked about my competitive profile. He was impressed and asked me what drives me to competitive programming.
+<br>He then asked me about a simple ques of spiral display of matrix. ( https://www.geeksforgeeks.org/print-a-given-matrix-in-spiral-form/ )
+I gave the best solution at first. He asked for a corner case that worked. 
+
+<br>He asked me about my hobbies (cross-questioning was done here) and concluded by asking if I have any questions for him. I asked him about the Machine Learning Project is currently working on in the company. He explained elaborately. 
+
+<br>Overall he was satisfied and ended with greetings.</p>
+
+    <h3><center>Round 3</center></h3>
+    <p>Interview Round 2: In 10 minutes, I was called for round 2. It was a short interview.
+<br>The interviewer started with my resume and asked about the research internship. It again went into a nice discussion. No cross questioning was done. He then jumped to Object-Oriented Programming. He asked the definitions of Inheritance and Polymorphism. He proceeded with asking real-life applications of it. He doesn't seem satisfied with my answer. He himself explained the application. He then ended up asking if I have any questions. I asked about what is expected from the intern in the company. He answered briefly here.
+<br>Overall, It seems to be more like a formality round.
+
+<br>No further round was done. 
+
+<br>Result - Selected</p>
+</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal7" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Interview Experience</h4>
+        </div>
+        <div class="modal-body">
+    <h3><center>Round 1</center></h3>
+    <p>It was a online coding test. There were 3 coding questions and about 5-6 mcqs l. The first coding question was a simple array question, second was of sliding window and third question was of priority queue.</p>
+
+    <h3><center>Round 2</center></h3>
+    <p>The second round was a online interview where we basically had video conferencing with the interviewer on Skype. We had to code two questions on a real time shared code editor. The first question was a graph based question and the second question was to find median of 2 sorted arrays. The interviewer was very helpful.</p>
+
+    <h3><center>Round 3</center></h3>
+    <p>It was a normal HR round. We just had a normal on call discussion about our project and interview experience with the HR and all the three shortlisted students after 2nd round were selected. </p>
+</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+
+
+
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal8" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Interview Experience</h4>
+        </div>
+        <div class="modal-body">
+    <h3><center>Round 1</center></h3>
+    <p>15 MCQs and 2 coding questions.</p>
+
+    <h3><center>Round 2</center></h3>
+    <p>Q-1 Write a program to dispense cash from ATM machine in such a way that the number of notes of different denominations are balanced. (Initially all the notes of different denominations are same)
+
+<br>Q-2 Implement LRU cache (discussed the solution using multiple data structures)
+
+<br>Q-3 Parentheses balancing (standard question)
+
+<br>Q-4 Given a number N, find the largest length between two consecutive 1's in its binary representation. Do this in O(log N) time.</p>
+
+    <h3><center>Round 3</center></h3>
+    <p>Q-1 Given numbers from 1-100, a game always asks for a random number between 1-100, the returned number should be unique each time, the game will finish at 100th move, when last number is returned. How would you Implement this?
+
+<br>Q-2 Puzzle (25 horses), it's equivalence with row wise sorted matrix.
+
+<br>Q-3 Don't remember</p>
+
+    <h3><center>Round 4</center></h3>
+    <p>In this round there were 2 interviewers, one of them asked pure HR questions and the other one asked about projects.
+
+<br><br>1. 5 adjectives for yourself
+<br>2. Something about you that is not mentioned in your resume.
+<br>3. What would be the first thing any faculty will tell about me?
+
+<br><br>Project related
+<br>1. Challenges I faced during my mentorship and internship.
+<br>2. How I resolved the changes?
+<br>3. How much time did I take to learn the new technology that I used in my internship?</p>
+</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal9" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Interview Experience</h4>
+        </div>
+        <div class="modal-body">
+    <h3><center>Round 1</center></h3>
+    <p>First round was online coding round. There were 2 sections- Coding and MCQs.
+<br>The first section had 2 coding questions. Both sections had separate time limits so solving quickly was the key.
+There were 50 questions in the MCQ section based on DBMS, OOPS, OS and Aptitude.</p>
+
+    <h3><center>Round 2</center></h3>
+    <p>After being shortlisted from the online round, this was a technical interview round. I was asked about my project and other things from my resume. One should be able to explain details of the project thoroughly. Then, I was asked about sorting algorithms. Write code for mergesort and quicksort. And also in-depth time complexity analysis for the algorithms.
+<br>A puzzle was also asked in this round.
+Each interview round was an elimination round.</p>
+
+    <h3><center>Round 3</center></h3>
+    <p>This was the next technical interview round in which i was again asked questions from my resume. Then DBMS concepts and writing complex SQL queries were tested.
+<br>He gave me a schema and told me to write queries. Also the interviewer asked me difference in results of various join operations.
+<br>Then a coding question was asked and finally a puzzle.</p>
+
+<h3><center>Round 4</center></h3>
+    <p>This was the final HR round where i was asked another puzzle(finding the bag of defective coins) and then general HR questions like why this company etc.</p>
+</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+
+
+
+    <!-- Modal -->
+  <div class="modal fade" id="myModal10" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Interview Experience</h4>
+        </div>
+        <div class="modal-body">
+    <h3><center>Round 1</center></h3>
+    <p>Online test - 3 questions. One was an application of graph's MST. </p>
+
+    <h3><center>Round 2</center></h3>
+    <p>Interview 1: The first question was based on cities and paths and was an application of topological sort. Then, the interviewer modified the question such that cycles could also be formed in the graph and hence topological sort couldn't be applied. I then used a LIS(longest increasing subsequence) based Dp approach. The second question was a combination of LIS and binary search.</p>
+
+    <h3><center>Round 3</center></h3>
+    <p>Interview 2: It was the system design round. I was asked to code up the classes for an airtel store. There were a certain number of desks available and a certain number of customers come up. The system should be able to assign customers to desks in FCFS manner, record the details of customer, store, reviews etc. Concepts like when to use composition and when aggregation etc were checked deeply.</p>
+
+    <h3><center>Round 4</center></h3>
+    <p>Interview 3: A combination of tech + Hr interview. Certain HR questions like why Uber, why you, biggest achievement, biggest failure etc were asked. A brief discussion on projects were done. After that a couple of coding questions on arrays and hashmaps were asked.</p>
+</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+
+
+
+
+
+    <!-- Modal -->
+  <div class="modal fade" id="myModal11" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Interview Experience</h4>
+        </div>
+        <div class="modal-body">
+    <h3><center>Round 1</center></h3>
+    <p>Online coding test(codess) for bagging internship at Microsoft in second year.
+
+<br>Questions were easier than expected, it was just the matter of passing corner test cases and completing the test in minimum possible time(one of the factors considered for getting shortlisted to next hackathon round).
+One question i remember was removing duplicates from the string, pretty easy ;). <br>Another one was:
+Find the depth of paranthesis-((())) has depth 3
+(()()) has depth 2, ()()() has depth 1. I did it with arrays instead of using stack at that moment, just because the approach with latter didn't strike.
+<br>There were 2 more questions which were also not difficult (I cannot remember them clearly as it's been almost a year already)</p>
+
+    <h3><center>Round 2</center></h3>
+    <p>After getting shortlisted, 4 of us from IGDTUW campus were invited to MS Hyderabad campus for Codess event and hackathon/Ideathon. We were divided into teams of 6 each.(All 6 were of different colleges), themes were given. We were provided mentors who were MS employees, to evaluate us on the basis of how we contributed in ideation process to prepare a prototype of a product to solve problem in the particular domain chosen. We brainstormed, pitched our idea to the judges and my team got selected in top 4. Don't worry, getting selected in top 4 was not a measure for getting call for internship ;) It was just a mark of appreciation. It was in the hands of the mentor, to pass on our feedback.<br>After that i got a mail from MS, interned for 8 weeks there and got PIO for 3rd year internship as well. Clearly one of the best experiences i have had till now, is spending those 2 months in MS. I realized my true potential while working among the experts of their domains :)</p>
+</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+
+
+
+
+
+
+    <!-- Modal -->
+  <div class="modal fade" id="myModal12" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Interview Experience</h4>
+        </div>
+        <div class="modal-body">
+    <h3><center>Round 1</center></h3>
+    <p>The criteria for appearing for Morgan Stanley was 80%and above percentage.<br>Their first round is an online round comprising of 3 sections:
+<br>Section 1 MCQ:
+This is dedicated to fundamentals of c/c++ oops os and ds.
+<br>Section 2:
+This had 3 error correction and code completion problems. 
+Aspirants were presented with coding problems that had errors that were to be detected and corrected so that the given problem statement was resolved.
+It also had 7 mcq problems based on basic mathematics and logical reasoning.
+<br>Section 3:
+This comprised of three coding questions based on data structures
+The sections were to be solved in order within given time limit 
+Approximately 45 minutes were given for coding round and 15-20 minutes for the other two rounds</p>
+
+    <h3><center>Round 2</center></h3>
+    <p>10 students were selected for this round
+This was a face to face technical round,  all major topics of data structures were covered  thoroughly, interviewer seeks optimal solutions and focuses on time and space complexity of proposed solution as well.ensure all test cases, boundary cases etc are covered in your solutions as well.</p>
+
+    <h3><center>Round 3</center></h3>
+    <p>This is an HR and technical round combined that will cover system design concepts as well. Prepare regularly asked HR questions well. Confidence and body language is key on each and every interview focus on that as well.</p>
+</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+
+
+
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal13" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Interview Experience</h4>
+        </div>
+        <div class="modal-body">
+     <h3><center>Round 1</center></h3>
+  
+    <p>1 coding questions which was of 60 marks and rest MCQs based on DBMS and OS etc. The coding question was based on strings and could also be solved using brute force approach. The complexity could be improved using hashmaps and priority queues.</p>
+
+    <h3><center>Round 2</center></h3>
+    <p>The next round was an HR interview in which they asked general questions about any type of work experience you have or volunteering experience. Also any projects you have done. It wasn’t a technical round so they didn’t go into the details of it; just a brief description would also work. It’s important to be thorough with your resume and answer confidently in this round.</p>
+</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal14" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Interview Experience</h4>
+        </div>
+        <div class="modal-body">
+    <h3><center>Round 1</center></h3>
+  
+    <p>I got to skip the online round and group fly because I was a Codess mentee.
+<br>Interview round 1 - 
+<br>Q1. Write code to print a matrix in spiral form.
+<br>Q2. I was asked to explain my project.</p>
+
+    <h3><center>Round 2</center></h3>
+    <p>Round 2 was purely HR round where very general questions were asked. I was quite lucky that only 2 rounds happened for my interview. This was not the case for non Codess students. So I would suggest all 2nd year students to participate in the Codess program. I would like to add that I didn't expect the process to be this simple and in reality, it was not like this for most others. A lot depends on your interviewer and luck so be prepared for the worst.</p>
+</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+
+
+
+    <!-- Modal -->
+  <div class="modal fade" id="myModal15" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Interview Experience</h4>
+        </div>
+        <div class="modal-body">
+   <h3><center>Round 1</center></h3>
+  
+    <p>The first round was an online coding test, conducted on the Hackerearth coding platform.
+There were 4 coding questions of 200 marks to be solved in a time span of 90 mins.
+<br>
+All the questions were worded and lengthy, so I would suggest not to waste time deciphering a question too long and go on to attempt other questions and return to the previous one once you are through with them.
+
+<br>Question 1 (75 marks, 10 test cases) : A string 's' was provided comprising of numbers and a number 'c' where the number of distinct permutations of had to be answered with the constraint that the number at every index of 's' should be less than 'c'.
+For Example - s = "12345678", c = 1234567; Output - 64
+Approach : a simple application of permutations and combinations would suffice and we know by observation that the number of permutations will be 2^n; n being the length of 's'. Repetition of numbers in 's' should also be considered.
+
+<br>Question 2 (50 marks, 3 test cases) : An array A is provided and we need to return the number of operations to make it equal to an array B which is also given. The operation involved decrementing selected elements in array A.
+Approach : this was a simple question based on greedy algorithmic approach.
+
+<br>Question 3 (25 marks, 8 test cases) : An array listing the elements of a binary tree and its subsequent child nodes. If an array element is at index 'i', it's children will be at indexes '2i' and '2i+1' respectively. The tree is repeated from its root till any random element of the tree. We need to identify the original, unrepeated tree by eliminating the additional elements.
+Approach : the repeated elements can either be identified by checking repetition of elements through data values stored in a hash map. I used the depth first search algorithm and an auxiliary array to check visited data elements.Once we iterate over a visited element again, it suggests repetition has been detected.
+
+<br>Question 4 (50 marks, 10 test cases) : A numeric matrix is provided and a value 'k'. We need to ascertain a value 'x' to be subtracted from any submatrix such that its sum yields the value 'k'.
+<br>Approach : this question is of dynamic programming and required implementing kadane's algorithm as well.
+
+<br>The overall coding test was of difficult complexity, those who were able to solve one and a half questions were shortlisted for the next round.
+14 students were shortlisted for the next round.</p>
+
+    <h3><center>Round 2</center></h3>
+    <p>The second round was a group fly. Intuit generally does not conduct a group fly and this was the first time it did.
+Only one question was given to be solved in 1 hour.
+Given a 6x7 matrix, design the connect-4 game for it. It is a two player game comprising of red and yellow coins to be fixed on the matrix. If 4 contiguous dots of the same color is obtained horizontally, vertically or diagonally, the player wins. It is guaranteed that a player is going to win.
+Input is provided in the form of a string for each player. The output specifies which player wins.
+For this problem, the following aspects were essential for further shortlisting:
+<br>1. clean code
+<br>2. modularity
+<br>3. layout of code
+<br>4. inclusion of comments ( I also kept an additional sheet to explain all the design features and constraints )
+<br>5. a solution better than the brute force approach was expected. Some seniors used DFS to solve the question. I used auxiliary arrays for horizontal, vertical, left and right diagnol storage to keep count of contiguous connected dots.
+<br>6. interaction with the mentors to explain approach and clear doubts was equally important.
+
+<br>In addition to this, our resume and a passport sized photograph was asked to be attached along with the solution sheet.
+6 students were shortlisted for the interviews.
+
+<br>Try practising coding questions on paper. There is a great deal of difference between implementing questions on a compiler and a paper. It also helps during the F2F interview rounds."</p>
+
+    <h3><center>Round 3</center></h3>
+    <p>Initially 2 rounds had to be conducted. Due to the shortage of time, only one technical interview was conducted.
+There were 2 interviewers in my case and it lasted approximately 70 mins.
+<br>The interviewers were very friendly and amiable. They greeted me warmly and we got started.
+One of them asked me about the day and if I was comfortable, given the entire process was very long. The round started with them asking about all projects mentioned in my resume. They asked about design features, implementation and usage of frameworks.I was also asked how would I associate improvement in those projects.
+<br>Then the interviewer asked me about my favorite data structure and recursion, what are it's pros and cons in competitive programming. I answered binary trees and all traversals of those were asked about.
+After thorough discussion on this, we proceeded towards ds and algo. First they asked me to find the post order traversal of a binary tree, given its inorder and preorder traversal. We discussed the approach and I was asked to code the solution function.
+<br>Next they only asked the approach in the next coding question. An array and a sum are given. Find all pairs and return their indexes that add up to the given sum. The indexes should not repeat. All approaches right from the brute force to the efficient were discussed. They did not want additional space when I mentioned hash maps, after which I suggested a circular array by using modulus on indexes and fast, slow pointers to find the pairs.
+
+<br>The second interviewer began asking questions after this. He asked about oops concepts, pointers in c++, static variables and virtual functions. In dbms he asked me about normalisation, normal forms, schemas, nosql databases (as they were mentioned in my resume) and their features.
+He also asked me about design concepts of load balancing, database sharding and implementation of hashes in real world, concept of cloud storage. At last a simple question on operating system process was asked.
+The round ended with me asking them queries I had in mind. This round was fairly easier compared to the other two. 
+
+<br>At last, 3 people were selected for the internship. </p>
+</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+
+
+
+
+
+    <!-- Modal -->
+  <div class="modal fade" id="myModal16" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Interview Experience</h4>
+        </div>
+        <div class="modal-body">
+    <h3><center>Round 1</center></h3>
+  
+    <p>Coding round - 10 logical mcq and 3 coding ques of advance difficulty.</p>
+
+    <h3><center>Round 2</center></h3>
+    <p>I was asked about my project, then a puzzle. After that interviewer asked me 8 questions. One of the question is direct application of stack and rest are of dp. </p>
+
+    <h3><center>Round 3</center></h3>
+    <p>It was an HR cum technical round. In this round I was asked to write complete code of 2 questions. Both of the ques are of dp.</p>
+</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+
+
+</section>
+<!-- support section Ended -->
+
+<!-- Footer section Start -->
+<footer>
+    <!-- container Start-->
+    <div class="container">
+       <div class="row" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
+           <ul>
+               <li><a href="index.html">Home </a></li><li class="semicolon">|</li>
+               <li><a href="about.html">About</a></li><li class="semicolon">|</li>
+               <li><a href="services.html">Mock Interviews</a></li><li class="semicolon">|</li>
+               <li><a href="portfolio.html">Mock Tests</a></li><li class="semicolon">|</li>
+               <li><a href="blog.html">Interview Experiences</a></li><li class="semicolon">|</li>
+               <li><a href="team.html">Our Team</a></li><li class="semicolon"></li>
+            </ul>
+       </div>
+       <div class="footer-logo">
+              <a href="index.html"><img src="images/logo.png" alt="footer-logo"></a>
+       </div>
+    </div>
+    <!-- container Ended-->
+</footer>
+<!-- Footer section Ended --> 
+
+<div class='scrolltop'>
+    <div class='scroll icon'><i class="fa fa-4x fa-angle-up"></i></div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/animate.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.viewbox.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    </body>
+  <!-- Body Ended -->
+</html>
